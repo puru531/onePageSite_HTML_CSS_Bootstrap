@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/mystyle.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        *{ 
+    margin:0px; padding:0px; 
+} 
+a{ 
+    text-decoration: none; 
+}
+/*======================top header section css =================*/ 
+.top-header
+{ 
+    background-color: #f8f9fa; 
+    height:80px; } 
+.social-icons ul {
+    list-style:none; 
+    display: flex; 
+} 
+.social-icons ul li {
+    list-style: none;
+    padding-right: 10px; 
+} 
+.social-icons ul li a { 
+    background-color:#000;
+    padding:5px 8px; 
+    border-radius:50%; 
+    line-height:80px; 
+} 
+.social-icons .fa-facebook {
+  padding-left:3px;
+  padding-right:3px; 
+} 
+.social-icons ul li a i
+{ 
+    color:#fff; 
+} 
+.social-icons ul li a:hover i { 
+    color: #f16821; 
+}
+
+.top-header-right ul
+{
+    list-style:none;
+    display: flex;
+}
+.top-header-right ul li
+{
+    padding-right:10px;
+    line-height:80px;
+}
+.top-header-right ul li a
+{
+    color: #000;
+    letter-spacing:1px;
+    text-decoration: none;
+}
+.top-header-right ul li a i
+{
+    margin-right:5px;
+    color:#f16821; 
+}
+
+@media only screen and (max-width: 576px)
+{
+    
+    .top-header-right ul li a span
+    {
+        display: none;
+    }
+}
+/*==========================end of top header section css ==================*/
+
+/*==============================menu css ===========================*/
+.navbar .menu-left
+{
+    margin-left:360px;
+}
+.navbar .menu-left .menu-link 
+{
+    margin-left: 20px;
+}
+.navbar .menu-left .menu-link a
+{
+    color:#000;
+    font-size:16px;
+}
+.navbar .navbar-brand
+{
+    font-size:45px;
+    color:#000;
+    font-weight:bold;
+    margin-top: -15px;
+}
+.navbar .navbar-brand span
+{
+    color:#f16821;
+    font-size:45px;
+    border-radius:0px;
+}
+@media only screen and (max-width:576px)
+{
+    .navbar .menu-left
+    {
+        margin-left:0px;
+    }
+}
+/*============================End of menu css ======================*/
+
+/*============================Slider section css ======================*/
+
+.slider{
+    /*height:650px;*/
+    background-image: url('banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-inner
+{
+    /*height:650px;*/
+    background-color:rgba(0,0,0,0.4);
+}
+
+.head1 h1{
+    margin-top: 350px;
+    /*margin-left: 50px;*/
+    font-size: 72px;
+    color: white;
+    font-weight: bold;
+}
+.head1 p
+{
+    font-size:20px;
+}
+.head1 a
+{
+    padding:15px 25px;
+    font-size:13px;
+    font-weight:bold;
+    margin-top:32px;
+}
+.head1 #member
+{
+    background-color:#fff;
+    color:#000;
+}
+.head1 #member:hover
+{
+    background-color: rgba(0,0,0,0);
+    color:#fff;
+}
+.head1 .btn
+{
+    border-radius:0px;
+}
+
+
+/*---------------- About us section ----------------*/
+.class1{
+    padding:25px;
+    border-top:1px solid lightgrey;
+    border-left:1px solid lightgrey;
+    border-radius: 20px;
+}
+.class2{
+    margin-left: 25px; 
+    height: 100%;
+    width: 98%;
+    background-color: #f16821;
+}
+.class2 img{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    border: 4px solid lightgrey;
+}
+/* -------------------------- Services sectio  ----------------------------*/
+.class3{
+    overflow: hidden;
+}
+.class31{
+    transition:all 0.5s linear;
+}
+.card:hover .class31{ 
+    transform: scale(1.1);
+}
+.card-title{
+    color: #f16821;
+}
+.class7:hover{
+    background-color: #f16821;
+}
+.class7{
+    border-radius: 0;
+}
+/*---------------------  feedback section ------------------------------*/
+.class4{
+    /*height:350px;*/
+    background-image: url('feedback.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.class42{
+    padding: 10px 35px 10px 35px;
+    background-color: #02bd1e;
+}
+.class42:hover{
+    background-color: #fff;
+    color: #02bd1e;
+    font-weight: bold;
+}
+.class5{
+    /*height:350px;*/
+    background-color: rgba(0,0,0,0.7);
+}
+.class6{
+    width: 100%;
+}
+/* ------------------------ Footer section ---------------------------*/
+.class8{
+    background-image: url('contact.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.class9{
+    background-color: rgba(0,0,0,0.4);
+}
+.class9 h4:after{
+    margin-top: 5px;
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #f16821;
+}
+
+.class10 a{
+    background-color:#f16821;
+    padding-top: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    border-radius:50%;  
+    margin-top: 20px;
+    margin-right: 30px;
+}
+.class10 .fa-facebook
+{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.class10 a i
+{
+    color:#fff;
+    font-size: 20pt;
+    margin-top: 20px;
+}
+.class10 a:hover
+{
+    background-color: #fff;
+    color: #f16821;
+}
+.class10 a:hover i
+{
+    color: #f16821;
+}
+
+/*----------------------------------------------------*/
+.class11{
+    margin-left:-15px;
+    padding: 0px;
+}
+.class11 a{
+    color: #fff;;
+}
+.class11 ul li{
+    list-style: none;
+}
+/*---------------------------------------------------*/
+.class12{
+    float: none;
+    position: relative; 
+    background-image: url('contact2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: -30px;
+    padding:20px;
+
+}
+.class13{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+.class13 #id{
+    padding-left: 50px;
+}
+
+/*------------------------------------------------------*/
+.class14{
+    padding-bottom: 20px;
+    
+}
+
+/* ------------  icon css-------------------*/
+.icon
+{
+    position:fixed;
+    left: 50px;
+    bottom:20px;
+    z-index:1;
+}
+.pluse
+{
+    width:50px;
+    height: 50px;
+    background-color:#ff6d4a;
+    text-align: center;
+    line-height:50px;
+    border-radius:50%;
+    font-size:28px;
+    animation: bablu 1s linear infinite;
+}
+@keyframes bablu
+{
+    0%
+    {
+        box-shadow: 0 0 0 0 rgba(255, 109, 74, 0.7), 0 0 0 0 rgba(255, 109, 74, 0.7);
+    }
+    40%
+    {
+        box-shadow: 0 0 0 15px rgba(255, 109, 74, 0.7), 0 0 0 0 rgba(255, 109, 74, 0.7);
+    }
+    80%
+    {
+        box-shadow: 0 0 0 15px rgba(255, 109, 74, 0), 0 0 0 15px rgba(255, 109, 74, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 15px rgba(255, 109, 74, 0), 0 0 0 15px rgba(255, 109, 74, 0);
+    }
+}
+
+/*====================== another icon ===================*/
+.icon1
+{
+    position:fixed;
+    right: 50px;
+    bottom:20px;
+    z-index:1;
+}
+.pluse1
+{
+    width:50px;
+    height: 50px;
+    background-color:#22d904;
+    text-align: center;
+    line-height:50px;
+    border-radius:50%;
+    font-size:28px;
+    
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ========================top header section ============ -->
+    <div class="container-fluid top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-5 top-header-right">
+                    <ul>
+                        <li><a href="tel:8298262899"><i class="fa fa-phone"></i><span>(+91)9999999999</span></a></li>
+                        <li><a href="mailto:bittubca3497@gmail.com"><i class="fa fa-envelope"></i><span>name@domain.com</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============================End of top header section ============== -->
+    <!-- =============================menu section ============== -->
+    <div class="container-fluid bg-light sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light">
+                <a class="navbar-brand" href="#">PATNA<span>SEO</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav menu-left">
+                        <li class="nav-item menu-link">
+                            <a class="nav-link active" aria-current="page" href="#" style="color: #f16821;">Home</a>
+                        </li>
+                        <li class="nav-item menu-link">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item menu-link">
+                            <a class="nav-link" href="#serv">Services</a>
+                        </li>
+                        <li class="nav-item menu-link">
+                            <a class="nav-link" href="#grav">Gravience</a>
+                        </li>
+                        <li class="nav-item menu-link">
+                            <a class="nav-link" href="#cont">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- =============================End of menu section ============== -->
+    <section class="slider">
+        <div class="container-fluid slider-inner">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-1"></div> -->
+                    <div class="col-lg-6 head1">
+                        <h1>Connect with us</h1>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+                        <a href="#" type="button" class="btn btn-outline-light mb-5">JOIN NOW</a>
+                        <a href="#" type="button" class="btn btn-outline-light mb-5" id="member">GET PREMIUM</a>
+                    </div>
+                    <div class="col-lg-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================ ABOUT section ===================== -->
+    <section> 
+        <div class="container mt-5" id="about">
+            <center><span class="display-4">ABOUT US</span></center>
+            <div class="row">
+                <div class="col-lg-6 text-muted mt-5 class1">
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p class="text-justify">Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="#" type="button" class="btn btn-outline-dark class7"> Read more..</a>
+
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <div class="class2">
+                        <img src="customer.png" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------- Services dection ----------------------- -->
+    <section id="serv"> 
+        <div class="container mt-5">
+            <center><span class="display-4">SERVICES WE OFFER</span></center>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <div class="card">
+                        <div class="card-header class3">
+                        <img src="seo.jpg" height="200px" width="100%" alt="SEO"
+                            class="img-card-top rounded d-flex mx-auto class31">
+                        </div>
+                        <div class="card-body class15">
+                            <h3 class="card-title">Search Engine Optimization</h3>
+                            <p class="card-text mb-3"> We offer search Engine optimization service at very low cost with
+                                friendly relation with our clients. With 12 hrs. of availability we are most of the time wth
+                                you. </p>
+                            <a href="#" type="button" class="btn btn-outline-dark class7"> Read more..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <div class="card">
+                        <div class="card-header class3">
+                        <img src="web.png" height="200px" width="100%" alt="SEO"
+                            class="img-card-top rounded d-flex mx-auto class31">
+                        </div>
+                        <div class="card-body class15">
+                            <h3 class="card-title">Web Development</h3>
+                            <p class="card-text mb-3"> We offer search Engine optimization service at very low cost with
+                                friendly relation with our clients. With 12 hrs. of availability we are most of the time wth
+                                you. </p>
+                            <a href="#" type="button" class="btn btn-outline-dark class7"> Read more..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <div class="card">
+                        <div class="card-header class3">
+                        <img src="socialmedia.jpg" height="200px" width="100%" alt="SEO"
+                            class="img-card-top rounded d-flex mx-auto class31">
+                        </div>
+                        <div class="card-body class15">
+                            <h3 class="card-title">Social Media Marketing</h3>
+                            <p class="card-text mb-3"> We offer search Engine optimization service at very low cost with
+                                friendly relation with our clients. With 12 hrs. of availability we are most of the time wth
+                                you. </p>
+                            <a href="#" type="button" class="btn btn-outline-dark class7"> Read more..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card">
+                        <div class="card-header class3">
+                        <img src="emailmarketing.png" height="200px" width="100%" alt="SEO"
+                            class="img-card-top rounded d-flex mx-auto class31">
+                        </div>
+                        <div class="card-body class15">
+                            <h3 class="card-title">E-mail Marketing</h3>
+                            <p class="card-text mb-3"> We offer search Engine optimization service at very low cost with
+                                friendly relation with our clients. With 12 hrs. of availability we are most of the time wth
+                                you. </p>
+                            <a href="#" type="button" class="btn btn-outline-dark class7"> Read more..</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card">
+                        <div class="card-header class3">
+                        <img src="bulksms.jpg" height="200px" width="100%" alt="SEO"
+                            class="img-card-top rounded d-flex mx-auto class31">
+                        </div>
+                        <div class="card-body class15">
+                            <h3 class="card-title">Bulk SMS</h3>
+                            <p class="card-text mb-3"> We offer search Engine optimization service at very low cost with
+                                friendly relation with our clients. With 12 hrs. of availability we are most of the time wth
+                                you. </p>
+                            <a href="#" type="button" class="btn btn-outline-dark class7"> Read more..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card">
+                        <div class="card-header class3">
+                        <img src="video-marketing.png" height="200px" width="100%" alt="SEO"
+                            class="img-card-top rounded d-flex mx-auto class31">
+                        </div>
+                        <div class="card-body class15">
+                            <h3 class="card-title">Video Marketing</h3>
+                            <p class="card-text mb-3"> We offer search Engine optimization service at very low cost with
+                                friendly relation with our clients. With 12 hrs. of availability we are most of the time wth
+                                you. </p>
+                            <a href="#" type="button" class="btn btn-outline-dark class7"> Read more..</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------------- feedback form  ----------------------------- -->
+    <section class="class4" id="grav">
+        <div class="container-fluid mt-5 class5">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row mt-5">
+                        <center><p class="display-4 fw-bold text-white mt-5">We love to listen from you</p></center>
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group text-white fw-bold mt-3">
+                                            <label for="name">Full Name:</label>
+                                            <input type="text" name="name" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group text-white fw-bold mt-3">
+                                            <label for="mob">Mobile Number:</label>
+                                            <input type="mobile" name="mob" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group text-white fw-bold mt-3">
+                                            <label for="name">Enter Email:</label>
+                                            <input type="email" name="email" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group text-white fw-bold mt-3">
+                                            <label for="Servive">Service:</label>
+                                            <select type="text" class="form-control" required>
+                                                <option>---Select---</option>
+                                                <option value="digital">Digital Marketing</option>
+                                                <option value="web">Website Development</option>
+                                                <option value="seo">Seo Services</option>
+                                                <option value="soc">Social Media</option>
+                                                <option value="click">Pay Per Click</option>
+                                                <option value="app">App Development</option>
+                                                <option value="soft">Software Development</option>
+                                                <option value="email">Email Marketing</option>
+                                                <option value="blog">Blog</option>
+                                                <option value="pay">Pay Online</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 mb-3">
+                                        <div class="form-group text-white fw-bold mt-3 mb-3">
+                                            <textarea rows="5"
+                                                placeholder="Please enter your question, valuable feedback or advise."
+                                                class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 mb-3">
+                                        <center><button type="submit" class="btn btn-outline-light px-20 mx-auto class42">Send</button></center>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----------------------- Contact Us section --------------------------->
+    <section class="class8">
+        <div class="container-fluid class9 mt-5">
+            <!-- ================icon section ======= -->
+            <div class="icon">
+                <div class="pluse">
+                    <a href="#" class="fa fa-phone text-white"></a>
+                </div>
+            </div>
+            <div class="icon1">
+                <div class="pluse1">
+                    <a href="#" class="fa fa-whatsapp fa-spin text-white"></a>
+                </div>
+            </div>
+            <!-- ============= End of icon section ===== -->
+            <div class="container-fluid" id="cont">
+                <div class="container text-white">
+                    <div class="row">
+                        <div class="col-lg-4 mt-4 ">
+                            <h4 class="mb-5">ABOUT COMPANY</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 class10">
+                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-lg-2 col-md-4 class10">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-lg-2 col-md-4 class10">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-lg-2 col-md-4 class10">
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-lg-2 col-md-4 class10">
+                                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-lg-2 col-md-4 class10">
+                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-4">
+                            <h4 class="mb-5">SERVICES</h4>
+                            <div class="row">
+                                <div class="col-md-6 class11">
+                                    <ul>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#"> Digital Marketing</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 class11">
+                                    <ul>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#"> Website Development</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 class11">
+                                    <ul>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#"> Seo Services</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 class11">
+                                    <ul>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#"> Social Media Marketing</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 class11">
+                                    <ul>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#"> Pay Per Click</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 class11">
+                                    <ul>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#"> App Development</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 class11">
+                                    <ul>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#"> Software Development</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 class11">
+                                    <ul>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#"> Email Marketing</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 class11">
+                                    <ul>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#"> Blog</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 class11">
+                                    <ul>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#"> Pay Online</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-4 mb-5">
+                            <h4 class="mb-5">GET A FREE QUOTE</h4>
+                            <div class="form-group">
+                                <div class="container-fluid mt-2">
+                                    <label for="name">Name:</label>
+                                    <input type="text" name="name" placeholder="Enter your name" class="form-control">
+                                </div>
+                                <div class="container-fluid mt-2">
+                                    <label for="name">Email:</label>
+                                    <input type="email" name="email" placeholder="Enter your email address"
+                                        class="form-control">
+                                </div>
+                                <div class="container-fluid mt-2">
+                                    <label for="name">URL:</label>
+                                    <input type="url" name="url" placeholder="Enter the URL" class="form-control">
+                                </div>
+                            </div>
+                            <div class="container-fluid mt-3">
+                                <center><button type="submit" name="submit" class="btn btn-outline-light class7 px-3">Get Quote</button></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------- for larger bottom div -------------------- -->
+        <div class="container-fluid text-white bg-dark">
+            <!-- --------- for smaller overlapping div -------------- -->
+            <div class="container text-white class12">
+                <div class="row">
+                    <div class="col-md-4 text-white class13">
+                        <a href="#" class="text-white"><i class="fa fa-phone text-white"></i> (+91) 8804173991</a>
+                    </div>
+                    <div class="col-md-4 text-white class13">
+                        <a href="#" class="text-white"><i class="fa fa-envelope text-white"></i>name @domain.com</a>
+                    </div>
+                    <div class="col-md-4 text-white class13">
+                        <span id="id1"><a href="#" class="text-white"><i class="fa fa-whatsapp text-white"></i>(+91)9999999999</a></span>
+                    </div>
+                </div>
+            </div>
+
+                <center>
+                    <h6 class="mt-3 class14">Website Developed by HASMUKH TECH</h6>
+                </center>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
